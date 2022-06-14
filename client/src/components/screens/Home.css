@@ -1,0 +1,23 @@
+.paginate{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .pag{
+} */
+.pag .page-link{
+    color: black;
+    text-align: center;
+    width: 20px;
+    height: 25px;
+    border: 1px solid rgb(6, 58, 78);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.active{
+    background-color: rgb(5, 5, 53);
+}
