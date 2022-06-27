@@ -39,32 +39,32 @@ const SignIn  = ()=>{
         })
     }
    return (
-      <div className="mycard">
-          <div className="card auth-card input-field">
+      <div className="mycard" >
+          <div className="card auth-card input-field" style={{boxShadow:"0px 5px 15px grey"}}>
             <h2>Instagram</h2>
             <input
             type="text"
-            placeholder="email"
+            placeholder="Email address"
             value={email}
             onChange={(e)=>setEmail(e.target.value)}
             />
             <input
             type="password"
-            placeholder="password"
+            placeholder="Password"
             value={password}
             onChange={(e)=>setPasword(e.target.value)}
             />
-            <button className="btn waves-effect waves-light #64b5f6 blue darken-1"
+            <button className="btn waves-effect waves-light #64b5f   blue darken-1"
             onClick={()=>PostData()}
             >
                 Login
             </button>
-            <h5>
-                <Link to="/signup">Dont have an account ?</Link>
-            </h5>
-            <h6>
-                <Link to="/reset">Forgot password ?</Link>
+            <h6 style={{fontSize:"15px"}}>
+            Don't have an account? <Link to="/signup"><span style={{color:"#0095f6"}}> Sign up</span></Link>
             </h6>
+            {/* <h6>
+                <Link to="/reset">Forgot password ?</Link>
+            </h6> */}
     
         </div>
       </div>

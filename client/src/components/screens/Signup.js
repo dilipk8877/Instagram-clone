@@ -165,17 +165,18 @@ const Signup = () => {
   }
   return (
     <div className='mycard'>
-    <div className="card auth-card">
+    <div className="card auth-card" style={{boxShadow:"0px 5px 15px grey"}}>
         <h2>Instagram</h2>
-        <input type="text" placeholder='name' value={name} onChange={(e)=>setName(e.target.value)}/>
-        <input type="email" placeholder='email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
-        <input type="password" placeholder='password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
-        <button className="btn waves-effect waves-light #64b5f6 blue lighten-2" 
+        <h6 style={{fontSize:"25px",marginBottom:"10px",color:"grey"}}>Sign up to see photos and videos from your friends.</h6>
+        <input type="text" placeholder='Full Name' value={name} onChange={(e)=>setName(e.target.value)}/>
+        <input type="email" placeholder='Email address' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+        <input type="password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
+        <button className="btn waves-effect waves-light #64b5f   blue darken-1" 
         onClick={()=>PostData()}>
           Signup
         </button>
-        <h6>
-            <Link to='/signin'>If you have an account ?</Link>
+        <h6 style={{fontSize:"15px"}}>
+          Have an account? <Link to='/signin'><span style={{color:"#0095f6"}}>Log in</span></Link>
         </h6>
     </div>
 </div>

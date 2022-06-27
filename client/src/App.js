@@ -12,6 +12,8 @@ import UserProfile from './components/screens/UserProfile'
 import SubscribedUserPosts from './components/screens/SubscribesUserPosts'
 import Reset from './components/screens/Reset'
 import NewPassword from './components/screens/Newpassword'
+import Following from './extra/Following';
+import Followers from './extra/Followers';
 export const UserContext = createContext()
 
 
@@ -56,7 +58,12 @@ const Routing = ()=>{
       <Route path="/reset/:token">
         <NewPassword />
       </Route>
-      
+      <Route path="/following">
+        <Following/>
+      </Route>
+      <Route path="/followers">
+        <Followers/>
+      </Route>
     </Switch>
   )
 }

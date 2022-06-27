@@ -35,6 +35,7 @@ a{
   grid-template-columns:repeat(3,1fr);
 }
 .gallery img{
+  margin-right: 5px;
   width: 250px;
   height: 200px;
   margin-top: 20px;
@@ -66,9 +67,12 @@ a{
 .material-icons:hover{
   cursor: pointer;
 }
+input{
+  padding-left: 15px;
+}
 
 ::placeholder{
-  color: rgb(12, 12, 12);
+  color: rgb(63, 60, 60);
 }
 
 .card-image img{
