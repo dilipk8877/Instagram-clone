@@ -340,7 +340,7 @@ const Home = () => {
             })
     }
 
-    const usersPerPage = 4;
+    const usersPerPage = 3;
     const pagesVisited = pageNumber * usersPerPage;
 
     const displayUsers = data.slice(pagesVisited, pagesVisited + usersPerPage)
@@ -431,9 +431,6 @@ const Home = () => {
                 />
             </div>
           )
-
-
 }
-
 
 export default Home
